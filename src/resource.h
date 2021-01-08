@@ -50,6 +50,7 @@
 #define IDM_FIND_NEXT                   436
 #define IDM_FIND_PREV                   437
 #define IDM_FIND_MATCH                  438
+#define IDM_TOGGLE_DARK                 439
 #define IDM_ZOOM_FIT_PAGE               440
 #define IDM_ZOOM_ACTUAL_SIZE            441
 #define IDM_ZOOM_FIT_WIDTH              442

@@ -57,6 +57,7 @@ static ToolbarButtonInfo gToolbarButtons[] = {
     {8, IDM_FIND_PREV, _TRN("Find Previous"), 0},
     {9, IDM_FIND_NEXT, _TRN("Find Next"), 0},
     {10, IDM_FIND_MATCH, _TRN("Match Case"), 0},
+    {11, IDM_TOGGLE_DARK, _TRN("Toggle Dark Mode"), 0},
 };
 
 #define TOOLBAR_BUTTONS_COUNT dimof(gToolbarButtons)

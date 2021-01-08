@@ -2938,6 +2938,13 @@ void SetCurrentLanguageAndRefreshUI(const char* langCode) {
     prefs::Save();
 }
 
+static void ToggleDarkMode() {
+    // Toggle the colour inversion
+    gGlobalPrefs->fixedPageUI.invertColors = !gGlobalPrefs->fixedPageUI.invertColors;
+    // Refresh the document
+    UpdateDocumentColors();
+}
+
 static void OnMenuChangeLanguage(HWND hwnd) {
     const char* newLangCode = Dialog_ChangeLanguge(hwnd, trans::GetCurrentLangCode());
     SetCurrentLanguageAndRefreshUI(newLangCode);
@@ -3973,6 +3980,10 @@ static LRESULT FrameOnCommand(WindowInfo* win, HWND hwnd, UINT msg, WPARAM wPara
 
         case IDM_FIND_MATCH:
             OnMenuFindMatchCase(win);
+            break;
+
+        case IDM_TOGGLE_DARK:
+            ToggleDarkMode();
             break;
 
         case IDM_FIND_NEXT_SEL:
