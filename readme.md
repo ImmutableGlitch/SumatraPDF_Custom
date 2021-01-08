@@ -2,10 +2,12 @@
 The original software contains restrictions for copying or printing protected documents. This customised version has removed those restrictions and also includes a smiley face button on the toolbar which will toggle Dark Mode.
 
 Restriction example:
+
 ![alt text](copytext.png "Copy selected text")
 ![alt text](copytext2.png "Copying text denied")
 
 Dark Mode example:
+
 ![alt text](darkMode.png "Copy selected text")
 
 More information:
